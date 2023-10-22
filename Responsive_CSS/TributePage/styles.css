@@ -55,3 +55,9 @@ ul{
 ul>li{
     margin: 16px 0;
 }
+blockquote{
+    margin: 0 auto 50px;
+    max-width: 545px;
+    text-align: left;
+    font-style: italic;
+}
