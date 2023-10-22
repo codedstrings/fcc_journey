@@ -48,6 +48,10 @@ figcaption{
 
 
 ul{
-    /* margin: 0 168px 50px; */
+    max-width: 550px;
+    margin: 0 auto 50px;
     text-align: left;
+}
+ul>li{
+    margin: 16px 0;
 }
