@@ -79,3 +79,45 @@ nav>ul {
     border-radius: 2px;
     cursor: pointer;
 }
+
+#features{
+    display: flex;
+    /* border: 1px solid red; */
+    margin: 20px auto ;
+    max-width: 60%;
+    height: 50vh;
+}
+.features{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    
+}
+/* the logo text pairs */
+.feature{
+    display: flex;
+}
+#features .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 125px;
+    width: 20vw;
+    color: darkorange;
+}
+#features .desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 110px;
+    width: 36vw;
+    padding: 5px;
+}
+
+#video-section{
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    max-width: 60%;
+}
