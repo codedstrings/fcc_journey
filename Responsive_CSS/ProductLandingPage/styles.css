@@ -1,3 +1,6 @@
+:root{
+    --themeaccent: #e8602b;
+}
 * {
     box-sizing: border-box;
     margin: 0;
@@ -7,7 +10,8 @@
 
 body {
     background-color: rgb(51, 48, 48);
-    color: rgba(254, 254, 254, 0.863);
+    color: rgb(254, 254, 254);
+    font-family: 'Nunito', sans-serif; 
 }
 
 a {
@@ -71,7 +75,7 @@ nav>ul {
     height: 30px;
     margin: 15px 0;
     border: 0;
-    background-color: #e9602c;
+    background-color: var(--themeaccent);
     color: rgb(34, 32, 32);
     text-transform: uppercase;
     font-size: 1em;
@@ -104,7 +108,7 @@ nav>ul {
     justify-content: center;
     height: 125px;
     width: 20vw;
-    color: darkorange;
+    color: var(--themeaccent)
 }
 #features .desc {
     display: flex;
@@ -120,4 +124,68 @@ nav>ul {
     display: flex;
     justify-content: center;
     max-width: 60%;
+}
+#pricing{
+    display: flex;
+    justify-content: center;
+    margin: 50px 0;
+}
+.product{
+    border: 1px solid black;
+    width: 20vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 10px;
+    border-radius: 3px;
+}
+.productname{
+    text-transform: uppercase ;
+    background-color: var(--themeaccent);
+    color: black;
+    padding: 15px 0;
+    width: 100%;
+    font-weight: 700;
+}
+.h2price {
+   margin-top: 15px;
+}
+.product>ol{
+    margin: 7px 0;
+}
+.product>ol>li{
+    margin-bottom: 5px;
+}
+button{
+    border: 0;
+    margin: 15px 0;
+    background-color: #cfcfcf;
+    font-weight: 400;
+    padding: 0 20px;
+    height: 40px;
+    font-size: 1em;
+    font-weight: 700;
+    text-transform: uppercase;
+    border: 1px solid black;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    max-width: 63%;
+    /* border: 1px solid red; */
+    margin: 0 auto;
+    background-color: #3c3b3b;
+    padding: 20px 10px;
+}
+footer>ul{
+    display: flex;
+}
+footer>ul>li{
+    margin: 0 5px;
 }
