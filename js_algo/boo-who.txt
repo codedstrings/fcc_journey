@@ -1,0 +1,6 @@
+function booWho(bool) {
+  // console.log(typeof(bool)=='boolean')
+  return typeof(bool)=='boolean';
+}
+
+booWho(true);

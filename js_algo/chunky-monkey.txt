@@ -1,0 +1,18 @@
+function chunkArrayInGroups(arr, size) {
+let newarr=[],temp=0;
+for(let i=0;i<arr.length;i+=size){
+//iterates through arr with jumps=size(i+=size)
+  newarr.push(arr.slice(i,i+size));
+  //if size=2, 
+  //for arr=[0,1,2,3,4,5,6], [[0,1]]=arr.split(0,2)
+  //                       , [[2,3]]=arr.split(2,4)
+  //                       , [[4,5]]=arr.split(4.6)
+  //...
+  //..
+  //[[valX,valY]]=arr.split(i,i+size)
+
+}
+return newarr;
+}
+
+chunkArrayInGroups(["a", "b", "c", "d"], 2);

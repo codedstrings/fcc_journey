@@ -1,0 +1,14 @@
+function mutation(arr) {
+const target=arr[0].toLowerCase();
+const test=arr[1].toLowerCase();
+// let flag=true;
+for(let i in test){
+  // console.log(test[i])
+  // console.log(target.indexOf(test[i])<0)
+  if(target.indexOf(test[i])<0){
+    return false;
+  }
+}
+return true;
+}
+mutation(["Alien", "line"]);

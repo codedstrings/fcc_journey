@@ -1,0 +1,15 @@
+function titleCase(str) {
+  str=str.toLowerCase();
+  let temp=[];//temp array for capitalizing first letter
+  let newArr=[]; //for the final array to be joined
+  let arr=str.split(" "); //splitting by words.
+  for(let i in arr){
+    temp=arr[i].split(''); //splitting each word to characters to acess first char as temp[0]
+    temp[0]=temp[0].toUpperCase(); //capitalization of first letter
+    newArr.push(temp.join('')); //returned back to array of words(now with first letter capitalized)
+  }
+  return newArr.join(" "); //returned joined string with space in between
+
+}
+
+titleCase("I'm a little tea pot");

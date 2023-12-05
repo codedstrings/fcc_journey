@@ -1,0 +1,5 @@
+function confirmEnding(str, target) {
+  let flag= str.slice(-target.length)==target?true:false;
+return flag;
+}
+confirmEnding("Bastian", "ian");
