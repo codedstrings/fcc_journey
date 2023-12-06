@@ -1,0 +1,9 @@
+function destroyer(arr,...args) {
+  return arr.filter(item=>{
+    console.log(args.indexOf(item)===-1)//if -1 not present. ie true for filter
+    return args.indexOf(item)===-1;
+  });
+}
+
+destroyer([1, 2, 3, 1, 2, 3], 2, 3);
+// console.log(destroyer([1, 2, 3, 1, 2, 3], 2, 3))

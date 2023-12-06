@@ -1,0 +1,27 @@
+function diffArray(arr1, arr2) {
+  const newArr = [];
+  // console.log(Math.max(arr1.length,arr2.length));
+//check if values in array1 are in arr2 and push if not
+  for(let i=0; i< arr1.length;i++){
+    // console.log(arr2.includes(arr1[i]));
+
+    //if should only work if .includes returns false(.includes()==false) or !.includes is true(this case)
+    if(!arr2.includes(arr1[i])){  
+      newArr.push(arr1[i]); 
+    }
+  }
+  //check if values in array2 is in array1
+  for(let i=0;i< arr2.length;i++){
+    if(!arr1.includes(arr2[i])){
+      // console.log(arr2[i]);
+      // console.log(newArr)
+      newArr.push(arr2[i]);
+      // console.log(newArr)
+    }
+  }
+  return newArr;
+}
+
+
+console.log(diffArray([1, 2, 3, 5], [1, 2, 3, 4, 5]));
+console.log(diffArray(["diorite", "andesite", "grass", "dirt", "pink wool", "dead shrub"], ["diorite", "andesite", "grass", "dirt", "dead shrub"]));
